@@ -31,10 +31,14 @@ res.json(note);
 });
 })
 .put((req, res) => {
-  res.send('Actualizar nota');
+  Note.findByIdAndUpdate(req.params.id).exec((err,note)=>{
+    if(err)return next(err);
+    if(!note) return res.status(404).json({msg: 'Not Found'});
+    res.status(200).json(note);
+  });
 })
 .delete((req, res) => {
- Note.findByIdAndRemove(req.params.id (err) => {
+ Note.findByIdAndRemove(req.params.id, (err) => {
    res.json({msg: 'Nota borrada'});
  })
 });
