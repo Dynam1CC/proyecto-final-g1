@@ -31,10 +31,10 @@ res.json(note);
 });
 })
 .put((req, res) => {
-  Note.findByIdAndUpdate(req.params.id).exec((err,note)=>{
-    if(err)return next(err);
-    if(!note) return res.status(404).json({msg: 'Not Found'});
-    res.status(200).json(note);
+  
+  Note.findByIdAndUpdate(id, note, options)
+  .exec((err,note)=>{
+
   });
 })
 .delete((req, res) => {
