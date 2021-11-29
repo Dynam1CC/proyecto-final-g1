@@ -31,10 +31,19 @@ res.json(note);
 });
 })
 .put((req, res) => {
-  
+  const id = req.params.id;
+  const note = {
+    title: req.body.title,
+    text: req.body.text
+  };
+  const options = {
+    new: true,
+    omitUndefined: true
+  };
+
   Note.findByIdAndUpdate(id, note, options)
   .exec((err,note)=>{
-
+    res.json(note);  
   });
 })
 .delete((req, res) => {

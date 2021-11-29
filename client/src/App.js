@@ -26,8 +26,8 @@ const updateNote = id => {
   const tituloActualizado = prompt('ingrese nuevo titulo');
   const textoActualizado = prompt('ingrese nuevo texto')
   const datos = {
-    tituloActualizado: tituloActualizado,
-    textoActualizado: textoActualizado
+    title: tituloActualizado,
+    text: textoActualizado
   };
   axios.put('http://localhost:4000/api/notes/' + id, datos)
   .then(res => {
