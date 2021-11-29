@@ -1,6 +1,42 @@
-form {
+body {
+  margin: 5px;
+}
+.Notas{
   text-align: center;
 }
+
 .notas{
-  
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nota{
+  margin-top: 10px;
+  border: 2px turquoise;
+  border-radius: 8px;
+}
+Header {
+  margin: 5px;
+  font-size: 3px;
+  padding-left: 5px;
+  border: 1px rgba(64, 224, 208, 0.445);
+}
+.note{
+  width: 20px;
+  margin: 1vh;
+  align-items: center;
+  float: right;
+}
+.Notas{
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.fixed-bottom{
+  margin-top: 10px;
+}
+.botones{
+  width: 100%;
 }
