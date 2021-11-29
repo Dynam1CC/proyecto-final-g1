@@ -1,26 +1,55 @@
 body {
   margin: 5px;
+  background-image: url(nashe.jpg);
 }
-.Notas{
+.titulo{
+  background-color: white;
+  text-align: center;
+  color: purple;
+  border-radius: 5px;
+}
+.Textito{
+  background-color: white;
+  color:purple;
+  border-radius: 5px;
+}
+.botonsito{
+  border-radius: 10px;
+  border: 2px solid purple;
+}
+.agegarNota {
   text-align: center;
 }
 
+.Notas{
+  text-align: center;
+}
 .notas{
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .nota{
+  color: red;
   margin-top: 10px;
-  border: 2px turquoise;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 6px;
+  padding-right: 10px;
+  border: 2px solid red;
   border-radius: 8px;
+  background-color: white;
 }
-Header {
-  margin: 5px;
-  font-size: 3px;
-  padding-left: 5px;
-  border: 1px rgba(64, 224, 208, 0.445);
+.Header {
+  text-align: center;
+  font-size: 50px;
+  color: purple;
+  padding: 5px;
+  border: 3px solid purple;
+  border-radius: 15px;
+  background-color: white;
 }
 .note{
   width: 20px;

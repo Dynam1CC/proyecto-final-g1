@@ -69,7 +69,7 @@ useEffect(() => {
   <div className="app">
   <div className="agegarNota">
   <form onSubmit={handleSubmit}>
-  <label>Titulo</label>
+  <label className="titulo">Titulo</label>
   <br/>
   <input
   onChange={e => setTitle(e.target.value)}
@@ -77,7 +77,7 @@ useEffect(() => {
   type="text"
   />
   <br/>
-  <label>Texto</label>
+  <label className ="Textito">Texto</label>
   <br/>
   <textarea
   rows="6"
@@ -87,12 +87,12 @@ useEffect(() => {
   type="text"
   />
   <br/>
-  <input type="submit" value="Guardar" />
+  <input className="botonsito" type="submit" value="Guardar" />
   </form>
   </div>
   <br/>
+  <h1 className="Header">Lista de notas</h1>
   <div className="notas">
-  <h1>Lista de notas</h1>
           {notes.map(note => {
             return <Nota
             key={note._id}
